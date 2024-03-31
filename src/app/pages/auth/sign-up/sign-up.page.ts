@@ -54,7 +54,6 @@ export class SignUpPage implements OnInit {
             });
         })
         .catch(error => {
-          console.log(error);
           this.utilsSvc.presentToas({
             message: error.message,
             duration: 2500,

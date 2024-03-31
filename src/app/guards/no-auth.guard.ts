@@ -10,7 +10,7 @@ export class NoAuthGuard implements CanActivate {
 
   constructor(
     private afAuth: AngularFireAuth, // Inyecta AngularFireAuth
-    private router: Router
+    private router: Router // Inyecta Router
   ) { }
 
   canActivate(

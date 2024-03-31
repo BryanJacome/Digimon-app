@@ -28,7 +28,6 @@ export class HomePage implements OnInit {
     this.digimonsSvc.getDigimon(this.itemsPerPage).subscribe(
       (res: any) => {
         this.characters = res.content; // Actualizar arreglo de personajes
-        //this.totalPages = Math.ceil(res.totalElements / this.itemsPerPage); // Calcular el total de páginas
       },
       (error: any) => {
         console.error('Error al obtener personajes:', error);

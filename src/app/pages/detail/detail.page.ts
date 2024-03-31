@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DigimonsService } from 'src/app/services/digimons.service';
-import { SharedModule } from 'src/app/shared/shared.module';
 
 @Component({
   selector: 'app-detail',
@@ -32,7 +31,6 @@ export class DetailPage implements OnInit {
   getCharacter() {
     this.digimonsSvc.getCharacterById(this.characterId).subscribe({
       next: (res: any) => {
-        console.log(res);
         this.character = res;
         this.getFields();
       },

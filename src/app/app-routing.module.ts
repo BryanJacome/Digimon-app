@@ -21,7 +21,8 @@ const routes: Routes = [
   },
   {
     path: 'detail/:id',
-    loadChildren: () => import('./pages/detail/detail.module').then( m => m.DetailPageModule)
+    loadChildren: () => import('./pages/detail/detail.module').then( m => m.DetailPageModule),
+    canActivate: [AuthGuard]
   },
 ];
 
