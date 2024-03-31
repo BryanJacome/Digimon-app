@@ -24,3 +24,154 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+ion-button {
+    text-transform: none;
+}
+
+// safe padding for ios
+.safe-p-bottom {
+    padding-bottom: constant(safe-area-inset-bottom); // for ios 13+
+    padding-bottom: env(safe-area-inset-bottom); // for previous ios versions
+}
+
+.submit {
+    margin-top: 40px;
+}
+
+.empty {
+    text-align: center;
+    padding: 60px;
+    opacity: 30%;
+
+    ion-icon {
+        font-size: 100px;
+    }
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-input {
+    --border-color: #e0e0e0;
+    --border-radius: 15px;
+    --border-style: solid;
+    --border-width: 1px;
+    margin: 20px 0;
+
+    ion-label {
+        position: relative;
+        bottom: 2px;
+    }
+
+    .eye-icon {
+        position: relative;
+        top: 13px;
+    }
+}
+
+.validators {
+    color: var(--ion-color-danger);
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.auth-form {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-item {
+    --padding-top: 20px;
+
+    ion-avatar {
+        width: 70px;
+        height: 80px;
+        --border-radius: 15px;
+    }
+
+    .name {
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+
+    .data {
+        font-size: 13px;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+
+    .option-btn {
+        font-size: 27px;
+    }
+
+    ion-chip {
+        font-size: 14px;
+        border-radius: 10px;
+        margin-left: 0;
+    }
+}
+
+.glass-content {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.d-content-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior de la pantalla */
+    width: 100%;
+  }
+  
+  .pagination button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-wrapper {
+    margin: 0 10px; /* Ajusta el margen entre las imágenes según sea necesario */
+  }
+
+@media (min-width: 769px) {
+    .auth-form {
+        width: 500px;
+    }
+
+    .add-update-modal {
+        --height: 680px;
+    }
+}

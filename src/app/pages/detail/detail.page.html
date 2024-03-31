@@ -1,0 +1,39 @@
+<app-header title="Digimon Detalle" backButton="/home" [showButton]=false></app-header>
+
+<ion-content mode="ios">
+  <div class="ion-padding">
+    <div class="ion-text-center ion-padding-top" *ngIf="character">
+
+      <h1>{{character.id}}</h1>
+      <h3 style="text-decoration: underline;">{{character.name}}</h3>
+
+      <div style="display: flex; justify-content: center;">
+          <img [src]="character.images[0].href" />
+      </div>
+
+      <div class="ion-nowrap" style="display: flex;">
+        <div style="flex: 1;">
+          <h4>Level</h4>
+          <p>{{character.levels[0].level}}</p>
+        </div>
+        <div style="flex: 1;">
+          <h4>Attribute</h4>
+          <p>{{character.attributes[0].attribute}}</p>
+        </div>
+        <div style="flex: 1;">
+          <h4>Type</h4>
+          <p>{{character.types[0].type}}</p>
+        </div>
+      </div>
+
+      <div>
+        <h4>Fields</h4>
+        <div class="image-container">
+          <div *ngFor="let field of allFields" class="image-wrapper">
+            <img [src]="field" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
