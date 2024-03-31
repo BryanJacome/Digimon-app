@@ -1,0 +1,7 @@
+{
+  "name": "digimon-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
