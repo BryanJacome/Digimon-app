@@ -55,7 +55,7 @@ export class SignUpPage implements OnInit {
         })
         .catch(error => {
           this.utilsSvc.presentToas({
-            message: error.message,
+            message: "Correo ya registrado",
             duration: 2500,
             color: "danger",
             position: "top",
