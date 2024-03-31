@@ -9,5 +9,6 @@ export const environment = {
     appId: "1:712954692898:web:b5de4a2cccb4a4b70ed17b"
   },
   baseUrl: 'https://digi-api.com/api/v1/',
-  character: 'digimon/',
+  characterSize: 'digimon?pageSize=',
+  characterId: 'digimon/'
 };

@@ -27,8 +27,6 @@
 
   <!-- Paginación -->
   <div class="pagination">
-    <button ion-button (click)="previousPage()" [disabled]="itemsPerPage === 20">Anterior</button>
-    <span>{{currentPage}}</span>
-    <button ion-button (click)="nextPage()" [disabled]="currentPage === totalPages">Siguiente</button>
+    <button ion-button (click)="nextPage()" [disabled]="currentPage === totalPages">Mas ...</button>
   </div>
 </ion-content>

@@ -41,10 +41,4 @@ export class HomePage implements OnInit {
     this.currentPage += 1;
     this.loadCharacters();
   }
-
-  previousPage(): void {
-    this.itemsPerPage -= 20;
-    this.currentPage -= 1;
-    this.loadCharacters();
-  }
 }
